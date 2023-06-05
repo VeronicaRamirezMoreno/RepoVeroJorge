@@ -2,45 +2,92 @@
 
 <head>
     <meta charset="UTF-8">
-    <div align = "justified" id= "cabecera">
-    <img src="./IMG/logo-cabildo-gran-canaria.jpg" height = "70px" weidth = "70px"> <a align = "left" href = "./index.html"> INICIO </a> &nbsp   <a align= "rigth" href="./HTML/acceso-usuarios.html"> ACCESO USUARIOS</a>
-    <link rel="stylesheet" type= "text/css" href="./CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <div id="cabecera" class="container-fluid">
+        <div id="cabeceraLogo" class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+            <div align = "center">
+                <img src="./IMG/logos-CID.png" height="70px" weidth="70px">
+            </div>
+        </div>
+        <div id="cabeceraInicio" class="col-xs-6 col-sm-3 col-md-3 col-lg-2"> 
+            <div align = "left">
+                <a href="./index.html"> <h3> INICIO</h3> </a> 
+            </div>
+        </div>
+        <div id="cabeceraAccesoU" class="col-xs-6 col-sm-6 col-md-6 col-lg-8">
+           <div align = "right">
+            <a href="./HTML/acceso-usuarios.html"> <h3> ACCESO USUARIOS</h3> </a>
+           </div> 
+        </div>
     </div>
+
 </head>
 <hr>
 
 <body>
-    <div align = "center" id = "CID"> <h1> CENTRO INSULAR DE DEPORTES </h1></div>
-     <div align = "center" id = "actividades" class="container-fluid">
-            <div id="gimnasio" class= "col-xs-12 col-sm-3 col-md-3 col-lg-3"> <img src="./IMG/strong-man-training-in-gym-768x512.jpg" height = "250px" weidth = "250"> </div>
-            <div> <a href="./HTML/musculacion.html"> MUSCULACION ENTRE SEMANA </a> </div>
-            <br>
-            <div id="cardio" class= "col-xs-12 col-sm-3 col-md-3 col-lg-3"> <img src="./IMG/5f5b7604dd3ce08f7ace13e7_perder-peso.jpeg" height = "250px" weidth = "250">  </div>
-            <div> <a href="./HTML/cardio.html"> SALA CARDIO </a> </div>
-            <br>
-            <div id="clases" class= "col-xs-12 col-sm-3 col-md-3 col-lg-3"> <img src="./IMG/1.b-min-1024x683.jpeg" height = "250px" weidth = "250">  </div>
-            <div> <a href="./HTML/clases.html"> RESERVA CLASES </a> </div>
-            <br>
-            <div id="pagar" class= "col-xs-12 col-sm-3 col-md-3 col-lg-3"> <img src="./IMG/dinero-efectivo-k44H-U180497925435i0B-1248x770@Las Provincias.jpg" height = "250px" weidth = "250">  </div>
-            <div> <a href="./HTML/pagos.html"> MIS PAGOS - RENOVAR PLAZA </a> </div>
-            <br>
+    <div id="cabeceraActividades" class="container-fluid">
+        <div id="letreroCabecera" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h1 align="center"> <b> CENTRO INSULAR DE DEPORTES </b></h1>
         </div>
-
-    <div id = "abajo">
-        <p align = "left"><h3><b> CENTRO INSULAR DE DEPORTES </h3>
-            <h3>DE GRAN CANARIA</h3>
-            <h4>2020</h4>
-        </p>
-
-        <p align = "center"><h3><b> LEGAL </h3>
-            <h4> AVISO LEGAL</h4>
-            <h4> POLÍTICA DE PRIVACIDAD </h4>
-            <h4> POLÍTICA DE COOKIES </h4>
-        </p>
-
-
     </div>
-                
+
+    <div id="actividades" class="container-fluid">
+        <div id="gimnasio" class="col-xs-12 col-sm-12 col-md-6 col-lg-4"> 
+            <div align = "center">
+                <img src="./IMG/strong-man-training-in-gym-768x512.jpg" height="250px" weidth="250px"> 
+                <a href="./HTML/musculacion.html"> <h3> MUSCULACION ENTRE SEMANA</h3> </a> 
+            </div>
+        </div>
+        <div id="cardio" class="col-xs-12 col-sm-12 col-md-6 col-lg-4"> 
+            <div align = "center">
+                <img src="./IMG/5f5b7604dd3ce08f7ace13e7_perder-peso.jpeg" height="250px" weidth="250px"> 
+                <a href="./HTML/cardio.html"> <h3> SALA CARDIO </h3> </a> 
+            </div>
+        </div>
+        <div id="clases" class="col-xs-12 col-sm-12 col-md-12 col-lg-4"> 
+            <div align="center">
+                <img src="./IMG/1.b-min-1024x683.jpeg" height="250px" weidth="250px"> 
+                <a href="./HTML/clases.html"> <h3> RESERVA CLASES </h3> </a> 
+            </div>
+        </div>
+        <div id="pagar" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
+            <div align="center">
+                <img src="./IMG/diner-efectivo.jpg" height="250px" weidth="250px"> 
+                <a href="./HTML/pagos.html"> <h3> MIS PAGOS - RENOVAR PLAZA </h3> </a> 
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div id="abajo" class="container-fluid">
+        <div id="abajIzqda" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div align = "left">
+                <h4><b> CENTRO INSULAR DE DEPORTES </h4>
+                <h4><b> DE GRAN CANARIA </b></h4>
+                <h5> © 2020 </h5>
+            </div>
+        </div>
+        <div id="abajCentro" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div align = "left">
+                <h4><b> LEGAL </h4>
+                <a href=""><h5> AVISO LEGAL </h5></a>
+                <a href=""><h5> POLÍTICA DE PRIVACIDAD </h5></a>
+                <a href=""><h5> POLÍTICA DE COOKIES </h5></a>
+            </div>
+            
+        </div>
+        <div id="abajDcha" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div align = "left">
+                <h4><b> REDES </h4>
+                <img src="./IMG/facebook-logo.jpg" height="50px" weidth="50px">
+                <img src="./IMG/twitter-logo.png" height="50px" weidth="50px">
+                <img src="./IMG/instagram-logo.jpg" height="50px" weidth="50px">
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
